@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon jeu CV en JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="icon" type="image/png" href="img/rocket.png">
+</head>
+<body>
+	<h1>Zoubeir MAROUF-ARAIBI<br>Développeur FullStack JS</h1>
+    <nav>
+        <ul>
+            <li>
+            	<a href="index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="./img/CVFullStackJS.pdf">CV</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <canvas id="canvas"></canvas>
+    <div id="container">
+    	<div id="instructions">
+            <p>Utilisez les boutons gauche et droite de la souris pour détruire les astéroïdes et sauver notre Planet ... Bonne Chance !</p>
+            <h2>CLIQUEZ SUR PLAY POUR JOUER</h2>
+        </div>
+        <div id="win">
+        	<h1><br>VOUS AVEZ GAGNÉ !!!</h1>
+            <a href="./img/CVFullStackJS.pdf">
+            	<h2>Cliquez ici pour voir mon CV</h2>
+            </a>
+        </div>
+    	<button id="play">
+    		<img src="./img/play.png" alt="bouton-play"/>
+    	</button>
+    	<div id="contact">
+    		<ul>
+    			<li>
+    				<a href="http://mzoubeir.fr" title="Mon site personnel">
+    					<img class="logo" src="./img/logo.png" alt="logo">
+    				</a>
+    			</li>
+    			<li>
+    				<a href="https://www.linkedin.com/in/zoubeir-marouf-3607a1136/" title="Linkedin">
+    					<i class="fab fa-linkedin"></i>
+    				</a>
+    			</li>
+    			<li>
+    				<a href="https://github.com/Zoubir78" title="GitHub">
+    					<i class="fab fa-github-square"></i>
+    				</a>
+    			</li>
+    			<li>
+    				<a href="https://stackoverflow.com/users/10816131/m-zoubeir" title="Stackoverflow">
+    					<i class="fab fa-stack-overflow"></i>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

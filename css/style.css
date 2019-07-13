@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+}
+
+h1 {
+    color: lime;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Gugi', cursive;
+    text-align: center;
+}
+
+nav a{
+    color:#191919;
+    text-decoration:none;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+nav{
+    width: 50%;
+    height: 50px;
+    position:static;
+    margin: 30px 25%;
+    display:block;
+    text-align:center;
+}
+
+ul{
+    display:flex;
+    padding:0;
+}
+
+nav ul li{
+  background: lime;
+  color: #283E4A;
+  font-size: 20px;
+  border-radius: 0.5em;
+  padding: 0 3em;
+  position: relative;
+  overflow: hidden;
+  line-height: 32px;
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(5em, 7.5em);
+}
+
+nav ul li:hover::after {
+  animation: sheen 1s forwards;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+#contact{
+    position: absolute;
+    left:0;
+    top: 645px;
+    width: 1000px;
+    height: 100px;
+    text-align:center;
+    font-size:35px;
+    margin: 10px auto;
+    filter: drop-shadow(8px 8px 20px black);
+}
+ul li{
+    filter: drop-shadow(8px 8px 20px black);
+    list-style:none;
+    flex:auto;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+#canvas {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/space.jpg') no-repeat;
+    background-size: cover;
+}
+
+#container{
+    width: 1000px;
+    height: 650px;
+    position: relative;
+    margin: 30px auto;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(8px 8px 20px black);
+    visibility:hidden;
+}
+
+#instructions{
+    width : 932px;
+    height : 590px;
+    position:absolute;
+    color: lime;
+    font-size: 1.2em;
+    margin: 34px;
+    text-align:center;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#win{
+    width : 932px;
+    height : 590px;
+    position:absolute;
+    color: lime;
+    margin: 34px;
+    text-align:center;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:none;
+}
+
+#win a{
+    position:relative;
+    margin: 10px auto;
+}
+
+#win a:hover{
+    color: lime;
+    font-size: 1.5em;
+    transition: .5s;
+}
+
+#play{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    background-color: lime;
+    top: 225px;
+    left: 425px;
+    border-radius: 75px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#play img{
+    position:absolute;
+    top: 24px;
+    left: 24px;
+    display: block;
+}
